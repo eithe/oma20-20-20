@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.eithe.oma20-20-20",
+  "name": "Oma20-20-20",
+  "version": "1.0.0",
+  "author": "Eithe",
+  "license": "MIT",
+  "description": "A gentle 20-20-20 vision break reminder for Omarchy",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "20-20-20",
+    "description": "Remind me to look 20 feet away for 20 seconds",
+    "category": "Utilities",
+    "allowMultiple": false,
+    "defaultSection": "center"
+  }
+}
