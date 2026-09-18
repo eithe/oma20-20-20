@@ -1,5 +1,7 @@
 # Oma20-20-20
 
+<img src="docs/menu.png" alt="Oma20-20-20 menu" width="400" height="350">
+
 A small Omarchy top-bar reminder for the 20-20-20 eye-care rule: every 20
 minutes, look at something 20 feet away for 20 seconds.
 
