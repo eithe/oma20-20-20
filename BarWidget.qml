@@ -64,12 +64,12 @@ BarWidget {
 
   function saveSettings() {
     if (!settingsLoaded) return
-    settingsFile.setText(JSON.stringify({
-      version: 1,
-      enabled: enabled,
-      autoHide: autoHide,
-      rememberSettings: rememberSettings,
-    }, null, 2) + "\n")
+    const payload = { version: 1, rememberSettings: rememberSettings }
+    if (rememberSettings) {
+      payload.enabled = enabled
+      payload.autoHide = autoHide
+    }
+    settingsFile.setText(JSON.stringify(payload, null, 2) + "\n")
   }
 
   function dismissReminder() {
