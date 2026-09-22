@@ -24,17 +24,16 @@ The plugin is identified as `io.github.eithe.oma20-20-20` and is placed in the
 center section of the bar by default. The timer starts only after reminders are
 enabled; the first reminder appears 20 minutes later.
 
-To install a local checkout for development (rerun after source changes):
+To remove it:
 
 ```bash
-./install.sh
+omarchy plugin remove io.github.eithe.oma20-20-20
 ```
 
-To remove the local installation:
-
-```bash
-./uninstall.sh
-```
+For local development, point `omarchy plugin add` at your checkout instead of
+the GitHub URL; Omarchy's own install/remove commands manage the plugin
+directory, so this repository ships no install or uninstall scripts of its
+own.
 
 ## Development
 
